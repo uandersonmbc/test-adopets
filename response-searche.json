@@ -1,0 +1,154 @@
+{
+    "status": 200,
+    "code": 200,
+    "data": {
+        "limit": 5,
+        "offset": 0,
+        "pages": 3,
+        "page": 1,
+        "count": 14,
+        "result": [
+            {
+                "id": 1799644,
+                "name": "Buddy",
+                "uuid": "84c74214-c486-4180-8ea2-4fa3e1357ee2",
+                "custom_code": null,
+                "specie_id": 4753880,
+                "breed_primary_id": 4659069,
+                "price": "88.67",
+                "created_date": "2019-11-19 19:24:49.434022+00",
+                "status_key": "AVAILABLE",
+                "branch_id": 1799616,
+                "payment_model_key": "ADOPTER_PAYS",
+                "sex_key": "FEMALE",
+                "size_key": "XL",
+                "age_key": "SENIOR",
+                "specie": {
+                    "id": 4753880,
+                    "name": "Dog"
+                },
+                "branch": {
+                    "id": 1799616,
+                    "uuid": "ef71cadf-fa9b-4c8b-a1a8-0e31e784c3ff"
+                },
+                "breed_primary": {
+                    "id": 4659069,
+                    "name": "Australian Stumpy Tail Cattle Dog"
+                }
+            },
+            {
+                "id": 1799519,
+                "name": "Buddy 2",
+                "uuid": "aa12cdce-02ba-40e2-9cbc-1e90ea3dcf3c",
+                "custom_code": null,
+                "specie_id": 4753880,
+                "breed_primary_id": 4659069,
+                "price": "88.67",
+                "created_date": "2019-11-19 19:24:49.434022+00",
+                "status_key": "AVAILABLE",
+                "branch_id": 1799616,
+                "payment_model_key": "ADOPTER_PAYS",
+                "sex_key": "FEMALE",
+                "size_key": "XL",
+                "age_key": "SENIOR",
+                "specie": {
+                    "id": 4753880,
+                    "name": "Dog"
+                },
+                "branch": {
+                    "id": 1799616,
+                    "uuid": "ef71cadf-fa9b-4c8b-a1a8-0e31e784c3ff"
+                },
+                "breed_primary": {
+                    "id": 4659069,
+                    "name": "Australian Stumpy Tail Cattle Dog"
+                }
+            },
+            {
+                "id": 1799524,
+                "name": "Buddy 3",
+                "uuid": "8b1e45bc-4e4f-4ad4-a73a-7ef6d0a3c148",
+                "custom_code": null,
+                "specie_id": 4753880,
+                "breed_primary_id": 4659069,
+                "price": "88.67",
+                "created_date": "2019-11-19 19:24:49.434022+00",
+                "status_key": "AVAILABLE",
+                "branch_id": 1799616,
+                "payment_model_key": "ADOPTER_PAYS",
+                "sex_key": "FEMALE",
+                "size_key": "XL",
+                "age_key": "SENIOR",
+                "specie": {
+                    "id": 4753880,
+                    "name": "Dog"
+                },
+                "branch": {
+                    "id": 1799616,
+                    "uuid": "ef71cadf-fa9b-4c8b-a1a8-0e31e784c3ff"
+                },
+                "breed_primary": {
+                    "id": 4659069,
+                    "name": "Australian Stumpy Tail Cattle Dog"
+                }
+            },
+            {
+                "id": 1799529,
+                "name": "Buddy 4",
+                "uuid": "ccc4bf50-f0dd-4da2-b382-ec00a352c278",
+                "custom_code": null,
+                "specie_id": 4753880,
+                "breed_primary_id": 4659069,
+                "price": "88.67",
+                "created_date": "2019-11-19 19:24:49.434022+00",
+                "status_key": "AVAILABLE",
+                "branch_id": 1799616,
+                "payment_model_key": "ADOPTER_PAYS",
+                "sex_key": "FEMALE",
+                "size_key": "XL",
+                "age_key": "SENIOR",
+                "specie": {
+                    "id": 4753880,
+                    "name": "Dog"
+                },
+                "branch": {
+                    "id": 1799616,
+                    "uuid": "ef71cadf-fa9b-4c8b-a1a8-0e31e784c3ff"
+                },
+                "breed_primary": {
+                    "id": 4659069,
+                    "name": "Australian Stumpy Tail Cattle Dog"
+                }
+            },
+            {
+                "id": 1799534,
+                "name": "Buddy 5",
+                "uuid": "21486000-ae62-413d-adb9-91be56c077d9",
+                "custom_code": null,
+                "specie_id": 4753880,
+                "breed_primary_id": 4659069,
+                "price": "88.67",
+                "created_date": "2019-11-19 19:24:49.434022+00",
+                "status_key": "AVAILABLE",
+                "branch_id": 1799616,
+                "payment_model_key": "ADOPTER_PAYS",
+                "sex_key": "FEMALE",
+                "size_key": "XL",
+                "age_key": "SENIOR",
+                "specie": {
+                    "id": 4753880,
+                    "name": "Dog"
+                },
+                "branch": {
+                    "id": 1799616,
+                    "uuid": "ef71cadf-fa9b-4c8b-a1a8-0e31e784c3ff"
+                },
+                "breed_primary": {
+                    "id": 4659069,
+                    "name": "Australian Stumpy Tail Cattle Dog"
+                }
+            }
+        ]
+    },
+    "message": null
+}
