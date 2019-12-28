@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    /* justify-content: center; */
     padding: 10px;
     height: 60px;
     background: #ce3f71;
@@ -9,12 +10,11 @@
 
 .avatar{
     background: #ce3f71;
-    border: 3px dotted #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .info{
     padding-left: 10px;
-    display: table-row;
     align-items: center;
 }
 

@@ -28,4 +28,6 @@ export const setAccessKey = (access_key: string) => {
 
 export const logout = () => {
     localStorage.removeItem(ACCESS_KEY);
+    localStorage.removeItem(USER);
+
 };
