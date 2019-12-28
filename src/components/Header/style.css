@@ -1,0 +1,38 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    height: 60px;
+    background: #ce3f71;
+}
+
+.avatar{
+    background: #ce3f71;
+    border: 3px dotted #ffffff;
+}
+
+.info{
+    padding-left: 10px;
+    display: table-row;
+    align-items: center;
+}
+
+.info h3{
+    color: white;
+    margin: 0px 0px -10px -1px;
+    padding: 0px;
+}
+.info span{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 8pt;
+}
+
+.logout{
+    height: 100%;
+    padding-left: 10px;
+    font-size: 20pt;
+    color: white;
+}

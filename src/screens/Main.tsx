@@ -2,11 +2,12 @@ import React from 'react';
 
 import { isAuthenticated } from './../services/auth';
 
+import { Layout } from 'antd';
+
+import { Header } from './../components';
+
 interface State {
-    access_key: string,
-    // status: number,
-    // code: number,
-    // message: string
+    access_key: string
 }
 
 class Main extends React.Component<any, State> {
@@ -17,9 +18,12 @@ class Main extends React.Component<any, State> {
     }
     render() {
         return (
-            <div>
-                {this.props.children}
-            </div>
+            <Layout className="layout">
+                <Header
+                    name="Uanderson Nunes"
+                    email="uandersonmbc@gmail.com"
+                />
+            </Layout>
         );
     }
 }
