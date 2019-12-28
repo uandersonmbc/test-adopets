@@ -1,0 +1,15 @@
+.body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 20px;
+    align-content: center;
+    justify-content: center;
+}
+.agoravai{
+    width: 90%;
+}
+.responsive{
+    width: 100%;
+    overflow-x:scroll;
+}

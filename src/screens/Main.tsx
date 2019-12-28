@@ -39,7 +39,7 @@ class Main extends React.Component<any, State> {
     }
     render() {
         return (
-            <Layout className="layout">
+            <Layout>
                 <Header
                     avatar={this.state.avatar}
                     name={this.state.fullname}
