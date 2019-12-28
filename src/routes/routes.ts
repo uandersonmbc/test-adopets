@@ -1,9 +1,9 @@
-import Login from './../screens/Login';
+import SignIn from '../screens/SignIn';
 import Pets from './../screens/Pets';
 
 export const privateRoutes = [
     {
-        path: '/pets',
+        path: '/',
         exact: true,
         permissions: ['admin'],
         redirect: '/login',
@@ -15,6 +15,6 @@ export const withoutAuthentication = [
     {
         path: '/login',
         exact: true,
-        component: Login,
+        component: SignIn,
     },
 ];

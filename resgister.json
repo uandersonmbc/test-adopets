@@ -1,6 +1,87 @@
 {
-    "organization_user": {
-        "email": "usuario-test@adopets.com",
-        "password": "123123"
+    "request": {
+        "organization_user": {
+            "email": "usuario-test@adopets.com",
+            "password": "123123"
+        }
+    },
+    "response": {
+        "status": 200,
+        "code": 200,
+        "data": {
+            "organization_user": {
+                "uuid": "8b8b5400-6331-4eec-9ce1-ed6894f13c64",
+                "well_come": false,
+                "email": "usuario-test@adopets.com",
+                "title": null,
+                "first_name": "Fulano",
+                "last_name": "Ciclano",
+                "pronoun_key": "NEUTRAL",
+                "birthday": null,
+                "avatar": null,
+                "created_date": "2019-11-19 18:34:08.594092+00",
+                "role": "owner",
+                "_formatted": {
+                    "pronoun_key": "Neutral",
+                    "full_name": "Fulano Ciclano",
+                    "birthday": "",
+                    "created_date": "11/19/2019"
+                },
+                "_extends": {
+                    "public_address": {
+                        "formatted_address": null,
+                        "state_code": null,
+                        "city": null,
+                        "country": null,
+                        "latitude": null,
+                        "longitude": null,
+                        "complement": null,
+                        "geocode": null,
+                        "_formatted": [],
+                        "_extends": []
+                    },
+                    "public_contact": {
+                        "home_phone": null,
+                        "cell_phone": null,
+                        "work_phone": null,
+                        "site": null,
+                        "facebook": null,
+                        "instagram": null,
+                        "twitter": null,
+                        "email": null,
+                        "_formatted": [],
+                        "_extends": []
+                    },
+                    "organization_branch": {
+                        "uuid": "ef71cadf-fa9b-4c8b-a1a8-0e31e784c3ff",
+                        "created_date": "2019-11-19 18:34:08.594092+00",
+                        "name": "Headquarter",
+                        "max_distance": 1000,
+                        "headquarter": true,
+                        "integration_sync_uuid": null,
+                        "_formatted": [],
+                        "_extends": []
+                    },
+                    "organization_shelter": {
+                        "uuid": "b9328806-f7b2-4aff-8e4b-e6669e8c27f6",
+                        "payment_model_key": "ADOPTER_PAYS",
+                        "created_date": "2019-11-19 18:34:08.594092+00",
+                        "name": "Organização de teste",
+                        "slug": "organizacao-de-teste-1574188448",
+                        "description": "Descrição da organização",
+                        "logo": null,
+                        "key501c3": "00-0000000",
+                        "email": "usuario-test@adopets.com",
+                        "stripe_id": null,
+                        "stripe_enabled": false,
+                        "_formatted": [],
+                        "_extends": []
+                    },
+                    "integration": null,
+                    "adoption_request_application": []
+                }
+            },
+            "access_key": ""
+        }
     }
 }

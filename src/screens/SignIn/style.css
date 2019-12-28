@@ -1,0 +1,41 @@
+.total{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+}
+
+.logo-image{
+    width: 150px;
+}
+
+.titulo{
+    color: #ce3f71;
+    font-weight: bold;
+    font-size: 36pt;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+}
+
+
+.button{
+    background: #ce3f71;
+    color: white;
+}
+
+/* max-width & max-width */
+@media screen and (min-width: 601px) {
+    .login-form{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 0px)and (max-width: 600px) {
+    .login-form{
+        width: 100%;
+    }
+}

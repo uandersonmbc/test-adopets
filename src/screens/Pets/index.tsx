@@ -3,7 +3,7 @@ import React from 'react';
 const Pets: React.FC = () => {
     return (
         <div>
-            {process.env.REACT_NAME} Testes
+            Aqui é onde vai fica a mágica
         </div>
     );
 }
