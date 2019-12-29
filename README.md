@@ -15,11 +15,11 @@ Depois de clonar o repositório e entrar na pasta basta usar o `npm install` ou 
 
 
 ## Dependências a ser instaladas
-- [react-router-dom]()
-- [react-acl-router]()
-- [moment]()
-- [axios]()
-- [antd]()
+- [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start): Gerenciar todas as rotas de aplicação
+- [react-acl-router](https://www.npmjs.com/package/react-acl-router): Gerenciar todos os tipos de usuários
+- [moment](https://momentjs.com/): Formatar datas
+- [axios](https://github.com/axios/axios): Fazer consultas em API's
+- [antd](https://ant.design/): Layout montado usando esse frameword de design
 
 ## Organização das pastas
 ```
