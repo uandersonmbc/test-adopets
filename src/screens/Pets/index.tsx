@@ -8,7 +8,7 @@ import { CSelect } from './../../components';
 
 import { PetsState } from './types';
 import { request } from './request';
-import { content, columns } from './complement';
+import { content, columns, fields, ages, sexs, sizes } from './complement';
 
 import './style.css';
 
@@ -93,34 +93,21 @@ function Pets() {
                         <CSelect
                             onChange={onChangeSex}
                             placeholder="Select a gender"
-                            options={[
-                                { value: 'MALE', description: 'MALE' },
-                                { value: 'FEMALE', description: 'FEMALE' }
-                            ]}
+                            options={sexs}
                         />
                     </Col>
                     <Col xs={24} lg={6} style={{ paddingTop: 20 }} >
                         <CSelect
                             onChange={onChangeSize}
                             placeholder="Select a size"
-                            options={[
-                                { value: 'S', description: 'Small' },
-                                { value: 'M', description: 'Medium' },
-                                { value: 'L', description: 'Large' },
-                                { value: 'XL', description: 'Extra Large' }
-                            ]}
+                            options={sizes}
                         />
                     </Col>
                     <Col xs={24} lg={6} style={{ paddingTop: 20 }} >
                         <CSelect
                             onChange={onChangeAge}
                             placeholder="Select an age"
-                            options={[
-                                { value: 'BABY', description: 'BABY' },
-                                { value: 'YOUNG', description: 'YOUNG' },
-                                { value: 'ADULT', description: 'ADULT' },
-                                { value: 'SENIOR', description: 'SENIOR' }
-                            ]}
+                            options={ages}
                         />
                     </Col>
                     <Col xs={24} lg={6} style={{ paddingTop: 20 }} >
@@ -129,14 +116,7 @@ function Pets() {
                                 <CSelect
                                     onChange={onChangeSortField}
                                     placeholder="Select a field rating"
-                                    options={[
-                                        { value: 'name', description: 'Name' },
-                                        { value: 'price', description: 'Price' },
-                                        { value: 'size_key', description: 'Size' },
-                                        { value: 'sex_key', description: 'Sex' },
-                                        { value: 'created_date', description: 'Creation date' },
-                                        { value: 'age_key', description: 'Age' }
-                                    ]}
+                                    options={fields}
                                 />
                             </Col>
                             <Col span={5} >

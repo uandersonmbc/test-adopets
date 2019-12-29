@@ -2,6 +2,40 @@ import React from 'react';
 import Moment from 'react-moment';
 import { Tag, Icon, Avatar } from 'antd';
 
+/**
+ * Component CSelect
+ */
+export const sexs = [
+    { value: 'MALE', description: 'MALE' },
+    { value: 'FEMALE', description: 'FEMALE' }
+]
+
+export const sizes = [
+    { value: 'S', description: 'Small' },
+    { value: 'M', description: 'Medium' },
+    { value: 'L', description: 'Large' },
+    { value: 'XL', description: 'Extra Large' }
+]
+
+export const ages = [
+    { value: 'BABY', description: 'BABY' },
+    { value: 'YOUNG', description: 'YOUNG' },
+    { value: 'ADULT', description: 'ADULT' },
+    { value: 'SENIOR', description: 'SENIOR' }
+]
+
+export const fields = [
+    { value: 'name', description: 'Name' },
+    { value: 'price', description: 'Price' },
+    { value: 'size_key', description: 'Size' },
+    { value: 'sex_key', description: 'Sex' },
+    { value: 'created_date', description: 'Creation date' },
+    { value: 'age_key', description: 'Age' }
+]
+
+/**
+ * Component Popover
+ */
 export const content = (
     <div>
         <p><Icon type='arrow-down' /> ASC</p>
@@ -9,6 +43,9 @@ export const content = (
     </div>
 );
 
+/**
+ * Component Table
+ */
 export const columns = [
     {
         title: 'Avatar',
