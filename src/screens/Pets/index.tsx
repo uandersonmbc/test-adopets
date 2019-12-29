@@ -48,10 +48,15 @@ function Pets() {
             loadingPets()
             setSort(sort ? false : true);
         }
+        console.log(request.options.sort[0])
     }
 
     const onChangeSortField = async (value: string) => {
-        Object.assign(request.options.sort, [sort ? value : '-' + value])
+        if (value === undefined) {
+            request.options.sort = [];
+        } else {
+            Object.assign(request.options.sort, [sort ? value : '-' + value])
+        }
         loadingPets()
     }
 
