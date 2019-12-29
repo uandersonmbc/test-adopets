@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Api from './../../services/api';
 
-import { Table, Tag, Row, Col, message, Icon } from 'antd';
+import { Table, Tag, Row, Col, message, Icon, Popover } from 'antd';
 
 import { CSelect } from './../../components';
 
@@ -92,13 +92,18 @@ const columns = [
         },
     },
 ];
-
+const content = (
+    <div>
+        <p><Icon type='arrow-down' /> ASC</p>
+        <p><Icon type='arrow-up' /> DESC</p>
+    </div>
+);
 function Pets() {
     const [pets, setPets] = useState<PetsState>({
         count: 0,
         result: []
     });
-    const [sort, setSort] = useState(false);
+    const [sort, setSort] = useState(true);
 
     const [loading, setLoading] = useState(false)
 
@@ -119,11 +124,21 @@ function Pets() {
     }
 
     const onChangeSort = async () => {
-        Object.assign(request.options.sort, [sort ? '-' + request.options.sort[0] : request.options.sort[0]])
+        let value: string = request.options.sort[0]
+        if (value !== undefined) {
+            if (value[0] === '-') {
+                Object.assign(request.options.sort, [value.replace('-', '')])
+            } else {
+                Object.assign(request.options.sort, ['-' + value])
+            }
+            loadingPets()
+            setSort(sort ? false : true);
+        }
     }
 
     const onChangeSortField = async (value: string) => {
-        Object.assign(request.options.sort, [sort ? '-' + request.options.sort[0] : request.options.sort[0]])
+        Object.assign(request.options.sort, [sort ? value : '-' + value])
+        loadingPets()
     }
 
     const onChangePaginete = async (value: number) => {
@@ -194,7 +209,7 @@ function Pets() {
                             <Col span={19} >
                                 <CSelect
                                     onChange={onChangeSortField}
-                                    placeholder="Select "
+                                    placeholder="Select a field rating"
                                     options={[
                                         { value: 'name', description: 'Name' },
                                         { value: 'price', description: 'Price' },
@@ -205,11 +220,13 @@ function Pets() {
                                 />
                             </Col>
                             <Col span={5} >
-                                <Icon
-                                    className="sort-icon"
-                                    type={sort ? 'arrow-down' : 'arrow-up'}
-                                    onClick={onChangeSort}
-                                />
+                                <Popover content={content} title="Sort field">
+                                    <Icon
+                                        className="sort-icon"
+                                        type={sort ? 'arrow-down' : 'arrow-up'}
+                                        onClick={onChangeSort}
+                                    />
+                                </Popover>
                             </Col>
                         </Row>
                     </Col>
