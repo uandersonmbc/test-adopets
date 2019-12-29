@@ -25,7 +25,6 @@ class Main extends React.Component<any, State> {
 
         const json = getUser();
         const user = JSON.parse(json);
-        console.log(user)
 
         this.setState({
             fullname: user.full_name,

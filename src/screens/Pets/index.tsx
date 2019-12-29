@@ -129,6 +129,7 @@ function Pets() {
                                         { value: 'price', description: 'Price' },
                                         { value: 'size_key', description: 'Size' },
                                         { value: 'sex_key', description: 'Sex' },
+                                        { value: 'created_date', description: 'Creation date' },
                                         { value: 'age_key', description: 'Age' }
                                     ]}
                                 />

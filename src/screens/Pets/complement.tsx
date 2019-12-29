@@ -1,6 +1,6 @@
 import React from 'react';
 import Moment from 'react-moment';
-import { Tag, Icon } from 'antd';
+import { Tag, Icon, Avatar } from 'antd';
 
 export const content = (
     <div>
@@ -10,6 +10,17 @@ export const content = (
 );
 
 export const columns = [
+    {
+        title: 'Avatar',
+        dataIndex: 'name',
+        key: 'avatar',
+        render: (name: string) => {
+            let partition = name.split(' ');
+            let total = partition.length
+            let initials = (total > 1) ? partition[0][0] + partition[total - 1][0] : partition[0][0]
+            return (<Avatar style={{ background: '#ce3f71' }}>{initials}</Avatar>)
+        }
+    },
     {
         title: 'Name',
         dataIndex: 'name',
@@ -78,8 +89,8 @@ export const columns = [
     },
     {
         title: 'Sex',
-        key: 'sex_key',
         dataIndex: 'sex_key',
+        key: 'sex_key',
         render: (tag: any) => {
             return (
                 <span>
