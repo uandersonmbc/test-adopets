@@ -13,6 +13,10 @@ cd test-adopets
 
 Depois de clonar o repositório e entrar na pasta basta usar o `npm install` ou `yarn` para instalar todas as dependências do projeto.
 
+Depois de instalar as dependências, você pode executar a aplicação usando `npm start` ou `yarn start`.
+
+Elaborei dois teste simples, para executar os estes basta executar `npm test` ou `yarn test`.
+
 
 ## Dependências a ser instaladas
 - [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start): Gerenciar todas as rotas da aplicação
