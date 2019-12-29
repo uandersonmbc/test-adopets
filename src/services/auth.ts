@@ -15,8 +15,7 @@ export const isAuthenticated = () => {
 }
 
 export const getAccessKey = () => localStorage.getItem(ACCESS_KEY);
-export const getUser = () => localStorage.getItem(USER);
-
+export const getUser = () => localStorage.getItem(USER) + '';
 export const setUser = (user: User) => {
     let u = JSON.stringify(user);
     localStorage.setItem(USER, u);

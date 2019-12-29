@@ -23,7 +23,7 @@ class Main extends React.Component<any, State> {
             this.props.history.push('/login');
         }
 
-        const json = getUser() + '';
+        const json = getUser();
         const user = JSON.parse(json);
         console.log(user)
 

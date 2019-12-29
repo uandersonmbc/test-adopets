@@ -21,6 +21,7 @@ class CSelect extends React.Component<Props> {
     render() {
         return (
             <Select
+                allowClear
                 showSearch
                 className="select"
                 placeholder={this.props.placeholder ? this.props.placeholder : 'Select a item'}
@@ -28,7 +29,7 @@ class CSelect extends React.Component<Props> {
                 onChange={this.props.onChange}
             >
                 {this.props.options ? this.props.options.map(option => {
-                    return (<Option value={option.value}>{option.description}</Option>)
+                    return (<Option key={option.value} value={option.value}>{option.description}</Option>)
                 }) : ''}
             </Select>
         );

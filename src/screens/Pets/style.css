@@ -6,8 +6,15 @@
     align-content: center;
     justify-content: center;
 }
-.agoravai{
+.justify{
     width: 90%;
+}
+.sort-icon{
+    font-size: 18pt;
+    border-radius: 7px;
+    padding: 5px;
+    background: #ce3f71;
+    color: #fff;
 }
 .responsive{
     width: 100%;
