@@ -35,5 +35,6 @@ Elaborei dois teste simples, para executar os estes basta executar `npm test` ou
     ├───screens
     │   ├───Pets
     │   └───SignIn
-    └───services
+    ├───services
+    └───__test__
 ```
