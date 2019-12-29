@@ -155,11 +155,11 @@ function Pets() {
             } else {
                 message.error('there was an error loading pets')
             }
-            setLoading(false);
         } catch (error) {
             message.error('there was an error loading pets')
+        } finally {
+            setLoading(false);
         }
-        console.log(request)
     }
 
     useEffect(() => {
