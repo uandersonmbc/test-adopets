@@ -15,10 +15,10 @@ Depois de clonar o repositório e entrar na pasta basta usar o `npm install` ou 
 
 Depois de instalar as dependências, você pode executar a aplicação usando `npm start` ou `yarn start`.
 
-Elaborei dois teste simples, para executar os estes basta executar `npm test` ou `yarn test`.
+Elaborei dois testes simples, para executar os estes basta executar `npm test` ou `yarn test`.
 
 
-## Dependências a ser instaladas
+## Dependências a serem instaladas
 - [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start): Gerenciar todas as rotas da aplicação
 - [react-acl-router](https://www.npmjs.com/package/react-acl-router): Gerenciar todos os tipos de usuários
 - [moment](https://momentjs.com/): Formatar datas
