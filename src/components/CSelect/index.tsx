@@ -24,7 +24,7 @@ class CSelect extends React.Component<Props> {
                 allowClear
                 showSearch
                 className="select"
-                placeholder={this.props.placeholder ? this.props.placeholder : 'Select a item'}
+                placeholder={this.props.placeholder || 'Select a item'}
                 optionFilterProp="children"
                 onChange={this.props.onChange}
             >
