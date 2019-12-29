@@ -15,7 +15,7 @@ Depois de clonar o repositório e entrar na pasta basta usar o `npm install` ou 
 
 Depois de instalar as dependências, você pode executar a aplicação usando `npm start` ou `yarn start`.
 
-Elaborei dois testes simples, para executar os estes basta executar `npm test` ou `yarn test`.
+Elaborei dois testes simples, para executar os testes basta executar `npm test` ou `yarn test`.
 
 
 ## Dependências a serem instaladas
